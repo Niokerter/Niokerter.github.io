@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Way Mod / Minecraft Fabric 1.21.11</title>
+	<meta name="description" content="Way Mod — блок перехода, крафтовый спавнер, Спавнер 2000 Pro, ядра прокачки, авто-воронка и передатчик. Мод для Minecraft 1.21.11 на Fabric.">
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="glow" aria-hidden="true"></div>
+
+	<nav class="nav" id="nav">
+		<div class="nav-inner">
+			<a class="logo" href="#top">[NIOKERTER]</a>
+			<div class="nav-links">
+				<a href="#about">О моде</a>
+				<a href="#blocks">Блоки</a>
+				<a href="#commands">Команды</a>
+				<a href="#download">Скачать</a>
+			</div>
+			<div class="nav-sep"></div>
+			<a class="nav-tag" href="https://github.com/Niokerter" target="_blank" rel="noopener">github</a>
+		</div>
+	</nav>
+
+	<main id="top">
+		<!-- HERO -->
+		<section class="hero">
+			<div class="hero-center">
+				<div class="hero-icon">
+					<img src="img/way_block.png" alt="Блок перехода" class="pixel">
+				</div>
+				<h1 class="display">WAY MOD</h1>
+				<div class="hero-sub">Minecraft Fabric 1.21.11</div>
+				<div class="hero-line"></div>
+				<div class="hero-tag">Телепорты · Спавнер 2000 Pro · Логистика чанка</div>
+				<div class="hero-btns">
+					<a class="btn solid" href="#download">Скачать</a>
+					<a class="btn ghost" href="https://github.com/Niokerter/waymod" target="_blank" rel="noopener">Исходники</a>
+				</div>
+			</div>
+			<div class="hero-scroll" aria-hidden="true"></div>
+		</section>
+
+		<!-- STATS -->
+		<section class="stats reveal">
+			<div class="stat"><span class="v">1.21.11</span><span class="k">Minecraft</span></div>
+			<div class="stat"><span class="v">0.20.1</span><span class="k">Fabric Loader</span></div>
+			<div class="stat"><span class="v">0.141.6</span><span class="k">Fabric API</span></div>
+			<div class="stat"><span class="v">8</span><span class="k">блоков и ядер</span></div>
+			<div class="stat"><span class="v">5</span><span class="k">команд /way</span></div>
+		</section>
+
+		<!-- ABOUT -->
+		<section id="about" class="section reveal">
+			<div class="sec-label">/ 01 О МОДЕ</div>
+			<div class="about-grid">
+				<div class="card about-card">
+					<div class="card-kicker">Паспорт мода</div>
+					<h3>Way Mod</h3>
+					<div class="card-id">v1.1.0 · com.example.waymod</div>
+					<div class="hr"></div>
+					<div class="status-row"><span class="dot on"></span>Собран под 1.21.11</div>
+					<div class="status-row dim"><span class="arrow">▸</span>маппинги Mojang (официальные)</div>
+					<div class="status-row dim"><span class="arrow">▸</span>без миксинов — чистый код</div>
+					<div class="status-row dim"><span class="arrow">▸</span>лицензия CC0-1.0</div>
+					<div class="hr"></div>
+					<div class="mini-off">🟣 Спавнеров 2 тысячи Pro Incorporated™</div>
+				</div>
+				<div class="about-text">
+					<p>Way Mod — это три уровня удобства. Сначала <b>телепорт</b>: блок перехода бросает игрока в любую точку любого измерения, а Shift+ПКМ возвращает назад. Потом <b>крафтовый спавнер</b> — спавнер, который наконец можно скрафтить. А в v1.1.0 — <b>фабрика</b>: «Спавнер 2000 Pro» со прокачкой ядрами до спавна каждые полсекунды и добычей ×5, авто-воронка, собирающая предметы со всего чанка по фильтру, и воронка-передатчик, тянущая лут в сундук на другом конце склада.</p>
+					<div class="interests">
+						<span>Телепортация</span>
+						<span>Авто-фермы</span>
+						<span>Логистика</span>
+						<span>Прокачка ядрами</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- BLOCKS -->
+		<section id="blocks" class="section reveal">
+			<div class="sec-label">/ 02 БЛОКИ И ПРЕДМЕТЫ</div>
+			<div class="blocks-grid">
+				<div class="block-card">
+					<img src="img/way_block.png" class="pixel" alt="way_block">
+					<h3>Блок перехода</h3>
+					<div class="bid">waymod:way_block</div>
+					<p>ПКМ — телепорт к записанной цели в любом измерении. Shift+ПКМ — назад к точке отправления (даже после смерти).</p>
+				</div>
+				<div class="block-card">
+					<img src="img/craftable_spawner.png" class="pixel" alt="craftable_spawner">
+					<h3>Крафтовый спавнер</h3>
+					<div class="bid">waymod:craftable_spawner</div>
+					<p>Железные решётки + око Эндера. Моб задаётся командой <code>/way spawner</code> или яйцом спавна.</p>
+				</div>
+				<div class="block-card featured">
+					<img src="img/spawner_2000_pro.png" class="pixel" alt="spawner_2000_pro">
+					<h3>Спавнер 2000 Pro</h3>
+					<div class="bid">waymod:spawner_2000_pro</div>
+					<p>Три строки мобов за раз, лимит живых 150, спавн раз в полсекунды после прокачки, режим «фарм»: авто-убийство с добычей ×5.</p>
+					<div class="badge">v1.1.0</div>
+				</div>
+				<div class="block-card featured">
+					<img src="img/auto_hopper.png" class="pixel" alt="auto_hopper">
+					<h3>Авто-воронка</h3>
+					<div class="bid">waymod:auto_hopper</div>
+					<p>Собирает предметы <b>со всего чанка</b> по всей высоте — по фильтру или всё подряд — и складывает в соседний контейнер.</p>
+					<div class="badge">v1.1.0</div>
+				</div>
+				<div class="block-card featured">
+					<img src="img/hopper_transmitter.png" class="pixel" alt="hopper_transmitter">
+					<h3>Воронка-передатчик</h3>
+					<div class="bid">waymod:hopper_transmitter</div>
+					<p>Shift+ПКМ + <code>/way link</code> — и передатчик тянет ресурсы из сундука в привязанный контейнер. Работает связкой с авто-воронками.</p>
+					<div class="badge">v1.1.0</div>
+				</div>
+				<div class="block-card">
+					<div class="cores-row">
+						<img src="img/speed_core.png" class="pixel" alt="Ядро скорости">
+						<img src="img/capacity_core.png" class="pixel" alt="Ядро вместимости">
+						<img src="img/killer_core.png" class="pixel" alt="Ядро убийцы">
+					</div>
+					<h3>Ядра прокачки</h3>
+					<div class="bid">speed · capacity · killer</div>
+					<p>ПКМ по Спавнеру 2000 Pro:<br>⚡ скорость ×2 (до 0,5 с)<br>📦 вместимость +50 (до 150)<br>⚔️ авто-убийство, добыча ×5</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- PIPELINE -->
+		<section id="pipeline" class="section reveal">
+			<div class="sec-label">/ 03 КОНВЕЙЕР ФЕРМЫ</div>
+			<div class="pipeline">
+				<div class="p-step"><img src="img/spawner_2000_pro.png" class="pixel" alt=""><div>Спавнер Pro<br><span>+ ядро убийцы</span></div></div>
+				<div class="p-arrow">→</div>
+				<div class="p-step"><span class="p-emoji">☠️</span><div>Мобы гибнут<br><span>добыча ×5</span></div></div>
+				<div class="p-arrow">→</div>
+				<div class="p-step"><img src="img/auto_hopper.png" class="pixel" alt=""><div>Авто-воронка<br><span>сбор со чанка</span></div></div>
+				<div class="p-arrow">→</div>
+				<div class="p-step"><span class="p-emoji">📦</span><div>Сундук<br><span>рядом</span></div></div>
+				<div class="p-arrow">→</div>
+				<div class="p-step"><img src="img/hopper_transmitter.png" class="pixel" alt=""><div>Передатчик<br><span>/way link</span></div></div>
+				<div class="p-arrow">→</div>
+				<div class="p-step"><span class="p-emoji">🏰</span><div>Склад<br><span>когда угодно далеко</span></div></div>
+			</div>
+		</section>
+
+		<!-- COMMANDS -->
+		<section id="commands" class="section reveal">
+			<div class="sec-label">/ 04 КОМАНДЫ</div>
+			<div class="cmd-table">
+				<div class="cmd"><code>/way give &lt;измерение&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;</code><span>блок перехода с записанной целью</span></div>
+				<div class="cmd"><code>/way set &lt;измерение&gt; &lt;pos&gt;</code><span>задать цель блоку на позиции (поддерживает <code>~</code>)</span></div>
+				<div class="cmd"><code>/way spawner &lt;моб&gt;</code><span>крафтовый спавнер с мобом</span></div>
+				<div class="cmd"><code>/way spawnerpro &lt;моб&gt;</code><span>Спавнер 2000 Pro сразу с мобом</span></div>
+				<div class="cmd"><code>/way link &lt;pos&gt;</code><span>привязать передатчик к контейнеру после Shift+ПКМ</span></div>
+			</div>
+			<p class="cmd-note">Измерения: <code>overworld</code>, <code>nether</code>, <code>the_end</code> (или полные id). Уровень доступа — как у <code>/gamemode</code>.</p>
+		</section>
+
+		<!-- DOWNLOAD -->
+		<section id="download" class="section reveal">
+			<div class="sec-label">/ 05 СКАЧАТЬ</div>
+			<div class="dl-grid">
+				<div class="dl-main">
+					<h3>Готовый jar</h3>
+					<p>Файл <code>waymod-1.1.0.jar</code> — на странице релизов репозитория. Положить в папку <code>mods</code> вместе с Fabric API и играть.</p>
+					<a class="btn solid" href="https://github.com/Niokerter/waymod/releases/latest" target="_blank" rel="noopener">Релизы →</a>
+				</div>
+				<div class="dl-side">
+					<h3>Сборка из исходников</h3>
+					<pre>git clone https://github.com/Niokerter/waymod
+cd waymod
+gradlew.bat build</pre>
+					<p class="mini">Нужна Java 21. Первая сборка скачает Minecraft (~1 ГБ), потом берётся из кеша.</p>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer reveal">
+			<div class="footer-inner">
+				<div class="f-logo">[NIOKERTER]</div>
+				<div class="f-note">Way Mod · CC0-1.0 · дизайн вдохновлён sh20fk.ru</div>
+				<div class="f-links">
+					<a href="https://github.com/Niokerter/waymod" target="_blank" rel="noopener">github.com/Niokerter/waymod</a>
+					<a href="https://Niokerter.github.io" target="_blank" rel="noopener">Niokerter.github.io</a>
+				</div>
+			</div>
+		</footer>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
