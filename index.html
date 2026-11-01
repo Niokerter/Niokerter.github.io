@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Way Mod / Minecraft Fabric 1.21.11</title>
-	<meta name="description" content="Way Mod — блок перехода, крафтовый спавнер, Спавнер 2000 Pro, ядра прокачки, авто-воронка и передатчик. Мод для Minecraft 1.21.11 на Fabric.">
+	<meta name="description" content="Way Mod — блок перехода, Вей-спавнер, Спавнер (HHN), ядра и ванильная прокачка, авто-воронка и передатчик. Мод для Minecraft 1.21.11 на Fabric.">
 	<link rel="icon" href="img/icon.png">
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -35,7 +35,7 @@
 				<h1 class="display">WAY MOD</h1>
 				<div class="hero-sub">Minecraft Fabric 1.21.11</div>
 				<div class="hero-line"></div>
-				<div class="hero-tag">Телепорты · Спавнер 2000 Pro · Логистика чанка</div>
+				<div class="hero-tag">Телепорты · Спавнер (HHN) · Логистика чанка</div>
 				<div class="hero-btns">
 					<a class="btn solid" href="#download">Скачать</a>
 					<a class="btn ghost" href="https://github.com/Niokerter/waymod" target="_blank" rel="noopener">Исходники</a>
@@ -70,7 +70,7 @@
 					<div class="mini-off">🟣 Спавнеров 2 тысячи Pro Incorporated™</div>
 				</div>
 				<div class="about-text">
-					<p>Way Mod — это три уровня удобства. Сначала <b>телепорт</b>: блок перехода бросает игрока в любую точку любого измерения, а Shift+ПКМ возвращает назад. Потом <b>спавн под контролем</b>: спавнер выдаётся только оператором или в креативе — никаких вольных копий у выживших. А в v1.1.0 — <b>фабрика</b>: «Спавнер 2000 Pro» со прокачкой ядрами до спавна каждые полсекунды и добычей ×5, авто-воронка, собирающая предметы со всего чанка по фильтру, и воронка-передатчик, тянущая лут в сундук на другом конце склада.</p>
+					<p>Way Mod — это три уровня удобства. Сначала <b>телепорт</b>: блок перехода бросает игрока в любую точку любого измерения, а Shift+ПКМ возвращает назад. Потом <b>спавн под контролем</b>: спавнер выдаётся только оператором или в креативе — никаких вольных копий у выживших. А в v1.1.0 — <b>фабрика</b>: «Спавнер (HHN)» со прокачкой ядрами и ванилью (сахар/редстоун/железо/сундук) до спавна каждые полсекунды и добычей ×5, авто-воронка, собирающая предметы со всего чанка по фильтру, и воронка-передатчик, тянущая лут в сундук на другом конце склада.</p>
 					<div class="interests">
 						<span>Телепортация</span>
 						<span>Авто-фермы</span>
@@ -93,15 +93,15 @@
 				</div>
 				<div class="block-card">
 					<img src="img/craftable_spawner.png" class="pixel" alt="craftable_spawner">
-					<h3>Крафтовый спавнер</h3>
+					<h3>Вей-спавнер</h3>
 					<div class="bid">waymod:craftable_spawner</div>
-					<p>Моб задаётся командой <code>/way spawner</code> или яйцом спавна. <b>Выдача — только оператору или в креативе</b>, выживание без прав его не получает.</p>
+					<p>Моб задаётся командой <code>/way spawner</code> или яйцом спавна. <b>Выдача — только оператору или в креативе</b>, выживание без прав его не получает. Сахар (ПКМ) ускоряет: −2 тика за штуку, без предела.</p>
 				</div>
 				<div class="block-card featured">
 					<img src="img/spawner_2000_pro.png" class="pixel" alt="spawner_2000_pro">
-					<h3>Спавнер 2000 Pro</h3>
+					<h3>Спавнер (HHN)</h3>
 					<div class="bid">waymod:spawner_2000_pro</div>
-					<p>Три строки мобов за раз, лимит живых 150, спавн раз в полсекунды после прокачки, режим «фарм»: авто-убийство с добычей ×5.</p>
+					<p>До 12 строк мобов за раз, лимит живых 150, спавн раз в полсекунды после прокачки, режим «фарм»: авто-убийство с добычей ×5. Прокачка ванилью: сахар — ускорение, редстоун — киллер, изумруд — снять, железо — +1 строка, сундук — +10.</p>
 					<div class="badge">v1.1.0</div>
 				</div>
 				<div class="block-card featured">
@@ -135,7 +135,7 @@
 		<section id="pipeline" class="section reveal">
 			<div class="sec-label">/ 03 КОНВЕЙЕР ФЕРМЫ</div>
 			<div class="pipeline">
-				<div class="p-step"><img src="img/spawner_2000_pro.png" class="pixel" alt=""><div>Спавнер Pro<br><span>+ ядро убийцы</span></div></div>
+				<div class="p-step"><img src="img/spawner_2000_pro.png" class="pixel" alt=""><div>Спавнер (HHN)<br><span>+ редстоун — киллер</span></div></div>
 				<div class="p-arrow">→</div>
 				<div class="p-step"><span class="p-emoji">☠️</span><div>Мобы гибнут<br><span>добыча ×5</span></div></div>
 				<div class="p-arrow">→</div>
@@ -156,7 +156,7 @@
 				<div class="cmd"><code>/way give &lt;измерение&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt;</code><span>блок перехода с записанной целью</span></div>
 				<div class="cmd"><code>/way set &lt;измерение&gt; &lt;pos&gt;</code><span>задать цель блоку на позиции (поддерживает <code>~</code>)</span></div>
 				<div class="cmd"><code>/way spawner &lt;моб&gt;</code><span>крафтовый спавнер с мобом</span></div>
-				<div class="cmd"><code>/way spawnerpro &lt;моб&gt;</code><span>Спавнер 2000 Pro сразу с мобом</span></div>
+				<div class="cmd"><code>/way spawnerpro &lt;моб&gt;</code><span>Спавнер (HHN) сразу с мобом</span></div>
 				<div class="cmd"><code>/way link &lt;pos&gt;</code><span>привязать передатчик к контейнеру после Shift+ПКМ</span></div>
 			</div>
 			<p class="cmd-note">Измерения: <code>overworld</code>, <code>nether</code>, <code>the_end</code> (или полные id). <code>give</code>/<code>set</code>/<code>link</code> — оператор; спавнеры — оператор или креатив; выживание без прав не видит выдачи спавнеров.</p>
